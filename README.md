@@ -35,7 +35,7 @@ the aim of the domdomdom is to firstly create a functioning website with the min
 5. CSS
 
 ### PLAN
-
+![Image of Yaktocat](926e12a8-a7a0-4d4b-9115-9f363b06b3f4.jpeg)
 
 
 #### STEP 1
