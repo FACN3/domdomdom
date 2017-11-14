@@ -1,9 +1,9 @@
 # :diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:**domdomdom**:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
-## *a news :newspaper: & gif :smiley_cat:  tool for tracking your favourite things!*
+## *a news item :newspaper: & encyclopedic :smiley_cat:  tool for tracking your favourite things!*
 
 ### WHO
 
-we are a team of busy programmmers who are eager to keep up to date with the latest fun gifs and news stories. It's such a shame that this tool doesn't exist!
+we are a team of busy programmmers who are eager to keep up to date with the latest wikipedia version and news stories for all kinds of things. It's such a shame that a tool which combines these two functions doesn't exist!
 
 Hasan - css liberator
 Marlen - logic master
@@ -11,7 +11,7 @@ Neil - dom contorsionist
 
 ### WHY
 
-the project this week calls for api requests, so we decided to use two apis from the list, the guardian and giphy.
+the project this week calls for api requests, so we decided to use two apis from the list, the guardian and wikipedia.
 
 
 
