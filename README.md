@@ -20,7 +20,7 @@ the project this week calls for api requests, so we decided to use two apis from
 
 ### HOW
 
-the aim of the domdomdom is to firstly create a functioning website with the minimum tools needed for passing the requirements of the project, then expanding our requirements time permitting. The following is a list of the challenges that we will have to overcome. 
+the aim of the domdomdom is to firstly create a functioning website with the minimum tools needed for passing the requirements of the project, then expanding our requirements time permitting. The following is a list of the challenges that we will have to overcome.
 
 1. EVENT LISTENER ON SUBMIT BUTTON ('MILEY CYRUS')
 
@@ -35,7 +35,7 @@ the aim of the domdomdom is to firstly create a functioning website with the min
 5. CSS
 
 ### PLAN
-![Image of Yaktocat](926e12a8-a7a0-4d4b-9115-9f363b06b3f4.jpeg)
+![Image of architecture map](/assets/926e12a8-a7a0-4d4b-9115-9f363b06b3f4.jpeg)
 
 
 #### STEP 1
@@ -45,10 +45,10 @@ be aware of seperation of concerns, including organization of folders
 
 #### STEP 2
 write parallel function for retreiving 2 api requests (put it in single array)
-logic.js (filtering of data) 
+logic.js (filtering of data)
 testing
-   test logic.js. 
+   test logic.js.
 #### STEP 3
-write DOM.JS 
+write DOM.JS
 #### STEP 4
 css design

@@ -1,0 +1,25 @@
+{
+  "name": "domdomdom",
+  "version": "1.0.0",
+  "description": "### WHO",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc node ./testing/tests.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN3/domdomdom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN3/domdomdom/issues"
+  },
+  "homepage": "https://github.com/FACN3/domdomdom#readme",
+  "devDependencies": {
+    "nyc": "^11.3.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  }
+}
