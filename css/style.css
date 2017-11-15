@@ -1,0 +1,38 @@
+body{
+  background-color: #3B3738;
+  padding: 0 10px 0 10px;
+}
+.header{
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-size: 35px;
+  color: #3B3738;
+  background-color: #FDF3E7;
+}
+.div__article{
+  display: block;
+  width:95%;
+  margin:auto;
+  background-color: #3B3738;
+  text-align: center;
+}
+div__article--title{
+  color: #3B3738;
+  font-size: 26px;
+}
+.news{
+  width : 47%;
+  background-color: #7E8F7C;
+  padding: 8px 16px 8px 16px;
+}
+.wiki{
+  width : 47%;
+  background-color: #7E8F7C;
+  padding: 8px 16px 8px 16px;
+}
+.data{
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  /*background-color: #FDF3E7;*/
+}

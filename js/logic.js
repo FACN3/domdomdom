@@ -87,9 +87,7 @@ function datatoDOMG(filteredData) {
     var new_div = document.createElement("div");
     var new_article = document.createElement("article");
     var h2_title = document.createElement("h2");
-
     var p_tag = document.createElement("p");
-
     h2_title.textContent = obj.Title;
     p_tag.textContent = obj.URL;
     new_article.appendChild(h2_title);
