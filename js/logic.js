@@ -93,7 +93,7 @@ function datatoDOMG(filteredData) {
     h2_title.textContent = obj.Title;
     new_div.classList.add("guardD");
     p_tag.innerHTML="See More";
-    p_tag.setAttribute( "onclick",obj.URL);
+    p_tag.setAttribute( "onclick","window.location.href='"+obj.URL+"'");
     h2_title.classList.add("div__article--title");
     p_tag.classList.add("div__article--url");
     new_article.classList.add("articleD");
