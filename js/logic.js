@@ -7,20 +7,18 @@ document.querySelector('.submitButton').addEventListener('click', function() {
   searchWord = document.querySelector('.searchBar').value;
   console.log(searchWord);
   var newSearchWord = searchWord.split(" ").join("%20");
-
-  url1 = 'http://content.guardianapis.com/search?q=' + newSearchWord + keys.apiGuardian;
-
-
+  url1 = 'https://content.guardianapis.com/search?q=' + newSearchWord + keys.apiGuardian;
   var newSearchWordw = searchWord.split(" ").join("+");
-
-  url2 = 'https://en.wikipedia.org/w/api.php?action=query&titles=' + newSearchWordw + '&prop=revisions&rvprop=content&format=json';
-
-
+  url2 = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=' + newSearchWordw + '&redirects';
+  console.log('wiki urk is ' + url2)
   searchWordfunc(url1, url2);
+  // document.querySelector('searchBar').contentText="";
+
 });
 
 function searchWordfunc(guardianURL, wikiURL) {
   fetch(guardianURL, function(data) {
+
     dataG = filterGuardian(data);
     if (count == 2) {
       datatoDOMG(dataG);
@@ -68,11 +66,12 @@ function filterGuardian(data) {
 }
 
 function filterWiki(data) {
+  console.log(data);
   var new_obj = {};
   var keys = Object.keys(data.query.pages);
   // console.log('keys is' + keys);
   new_obj['Title'] = data.query.pages[keys[0]].title;
-  new_obj['Content'] = data.query.pages[keys[0]].revisions[0]["*"];
+  new_obj['Content'] = data.query.pages[keys[0]].extract;
   console.log('new obj is' + new_obj);
   return new_obj;
   // console.log(filteredData);
@@ -99,11 +98,9 @@ function datatoDOMG(filteredData) {
 
 function datatoDOMW(filteredData) {
   var theNews = document.querySelector('.wiki');
-
   var new_div = document.createElement("div");
   var new_article = document.createElement("article");
   var h2_title = document.createElement("h2");
-  console.log(h2_title);
   var p_tag = document.createElement("p");
   // var new_div = document.createElement("div").classList.add('div__article');
   // var new_article = document.createElement("article").classList.add('article__wiki');
@@ -116,5 +113,15 @@ function datatoDOMW(filteredData) {
   new_div.appendChild(new_article);
   theNews.appendChild(new_div);
 
+
 }
+
+var update = function(newState){
+
+};
+
+var renderState = function (state){
+
+}
+
 // getGuardian("dog", filterGuardian, '&api-key=279c3a85-521e-412e-a0a4-5c79365d98dd', datatoDOM);
