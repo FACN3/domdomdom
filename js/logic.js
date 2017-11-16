@@ -17,6 +17,7 @@ document.querySelector('.submitButton').addEventListener('click', function() {
 
 
   searchWordfunc(url1, url2);
+  document.querySelector('.data').style.display="flex";
 });
 
 function searchWordfunc(guardianURL, wikiURL) {
@@ -87,9 +88,14 @@ function datatoDOMG(filteredData) {
     var new_div = document.createElement("div");
     var new_article = document.createElement("article");
     var h2_title = document.createElement("h2");
-    var p_tag = document.createElement("p");
+    var p_tag = document.createElement("button");
     h2_title.textContent = obj.Title;
-    p_tag.textContent = obj.URL;
+    new_div.classList.add("guardD");
+    p_tag.innerHTML="See More";
+    p_tag.setAttribute( "onclick",obj.URL);
+    h2_title.classList.add("div__article--title");
+    p_tag.classList.add("div__article--url");
+    new_article.classList.add("articleD");
     new_article.appendChild(h2_title);
     new_article.appendChild(p_tag);
     new_div.appendChild(new_article);
@@ -105,6 +111,7 @@ function datatoDOMW(filteredData) {
   var h2_title = document.createElement("h2");
   console.log(h2_title);
   var p_tag = document.createElement("p");
+  new_div.classList.add("wikiD");
   // var new_div = document.createElement("div").classList.add('div__article');
   // var new_article = document.createElement("article").classList.add('article__wiki');
   // var h2_title = document.createElement("h2").classList.add('div__article--title');
